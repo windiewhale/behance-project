@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+    a{
+    text-decoration: none;
+}
+    a img {
+    border: none;
+}
+
+    button,
+    a {
+    cursor: pointer;
+    color: inherit;
+}
+
+    textarea {
+    resize: none;
+}
+
+    button,
+    textarea,
+    select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+  /*end of css reset*/
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d2cad8;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#side {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 40px;
+    background-color: #0644b1;
+    color: white;
+
+}
+#logo {
+    width: 200px;
+    margin: 40px auto 40px auto;
+    
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.01em;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo img {
+    width: 60px;
+}
+
+aside a {
+    margin-left: 60px;
+    margin-right: auto;
+    padding: 20px 40px 20px 20px;
+    
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.sidebar a:hover {
+    background-color: #d2cad8;
+    color: #0644b1;
+    margin-left: 30px;
+    margin-right: 0;
+    padding-left: 50px;
+
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+}
+aside #pinky {
+    width: 140px;
+    height: 140px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    padding: 40px 20px 20px 20px;
+    border-radius: 15px;
+    background: linear-gradient(45deg,#f37f80 60%, #ebd8d8 ) ;
+    box-shadow: 3px 3px 10px #052e75, -3px -3px 10px #052e75;
+} 
+
+aside #pinky img {
+    width: 30px;
+}
+
+aside #pinky h5 {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+aside #pinky p {
+    font-size: 8px;
+}
+main {
+    flex-grow: 2;
+    
+    width: calc(100% - 40px);
+    margin: 20px;
+    margin-right: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+}
+
+header #scon {
+    /*display: inline-flex;
+    justify-content: space-around;*/
+    position: relative;
+    height: 30px;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #b6acc0;
+    box-shadow: 3px 3px 6px #b6acc0, -3px -3px 6px #b6acc0;
+   
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    text-align: start;
+    text-indent: 15px;
+}
+
+#sbar {
+    position: absolute;
+    left: 6%;
+    top: 20%
+}
+
+#mg {
+    position: absolute;
+    right: 4%;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-image: url(/pics/mag.png);
+}
+
+#top {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+#pnk {
+    width: 530px;
+    height: 200px;
+    margin: 20px;
+    margin-left: 0;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #b6acc0;
+    border-bottom: 4px solid #b6acc0;
+    background-color: #f37f80;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#pnk h2{
+    font-size: 18px;
+    letter-spacing: 00.01em;
+}
+
+#pnk p{
+    font-size: 10px;
+    letter-spacing: 00.01em;
+}
+
+#runner {
+    background-image: url(/pics/runner.jpg);
+}
+
+.bbtn {
+    width: 90px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #0644b1;
+    color: white;
+    font-size: 12px;
+}
+
+#noti {
+    width: 280px;
+    height: 450px;
+
+    background-color: white;
+}
+
+
