@@ -34,12 +34,14 @@
   /*end of css reset*/
 
 body {
-    width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     background-color: #d2cad8;
     font-family: 'Poppins', sans-serif;
+}
+
+#fakebody {
     display: flex;
     flex-direction: row;
     justify-content: space-between
@@ -50,7 +52,7 @@ body {
     flex-direction: column;
     flex-grow: 1;
     
-    width: 300px;
+    width: 200px;
     margin-top: 20px;
     border-radius: 40px;
     background-color: #0644b1;
@@ -59,7 +61,7 @@ body {
 }
 #logo {
     width: 200px;
-    margin: 40px auto 40px auto;
+    margin: 40px auto 40px 10px;
     
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.01em;
@@ -102,7 +104,7 @@ aside #pinky {
     margin-top: 30px;
     padding: 40px 20px 20px 20px;
     border-radius: 15px;
-    background: linear-gradient(45deg,#f37f80 60%, #ebd8d8 ) ;
+    background: linear-gradient(45deg,#cc255c, #f37f80 60%, #ebd8d8 ) ;
     box-shadow: 3px 3px 10px #052e75, -3px -3px 10px #052e75;
 } 
 
@@ -172,7 +174,8 @@ header #scon {
 }
 
 #pnk {
-    width: 530px;
+    position: relative;
+    width: 380px;
     height: 200px;
     margin: 20px;
     margin-left: 0;
@@ -186,20 +189,33 @@ header #scon {
 }
 
 #pnk h2{
-    font-size: 18px;
-    letter-spacing: 00.01em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 00.04em;
 }
 
 #pnk p{
-    font-size: 10px;
+    
+    font-size: 8px;
     letter-spacing: 00.01em;
+    
 }
 
-#runner {
-    background-image: url(/pics/runner.jpg);
+#pnk img {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 160px;
+    border-radius: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .bbtn {
+    position: absolute;
+    left: 15px;
+    bottom: 10%;
     width: 90px;
     height: 40px;
     margin-top: 20px;
@@ -209,11 +225,233 @@ header #scon {
     font-size: 12px;
 }
 
-#noti {
-    width: 280px;
-    height: 450px;
+#lefti {
+    position: relative;
+    width: 220px;
+    height: 420px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid #c4b9cf;
+    border-bottom: 4px solid #b6acc0;
 
     background-color: white;
 }
 
+#pic {
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 35px);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left top, #161d8b, #b460db);
+}
 
+#pic img {
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 35px);
+    width: 70px;
+    border-radius: 50%;
+    
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+#pho {
+    position: relative;
+    width: 210px;
+    height: 160px;
+}
+
+#pho p {
+    position: relative;
+    top: 115px;
+    left: 40px;
+    color: #85808a;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#noti {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    margin-top: 3px;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    color: #85808a;
+    text-align: center;
+}
+
+.tegla {
+    border: 2px solid;
+    width: 80px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+
+.tegla img {
+    display: block;
+    margin-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+}
+#bell {
+    background-color: #f37f80;
+    border-color: #f37f80;
+}
+
+#gear {
+    background-color: #e9ca65;
+    border-color:#e9ca65;
+}
+
+#sms {
+    background-color: #b6e13d;
+    border-color: #b6e13d;
+}
+
+#cloud {
+    background-color: #2056b3;
+    border-color: #2056b3;
+}
+
+#lay {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 380px;
+    height: 220px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.laybox {
+    width: 180px;
+    height: 90px;
+    padding: 20px 0 20px 0;
+    border-radius: 20px;
+    border: 1px solid #c4b9cf;
+    border-bottom: 4px solid #b6acc0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+}
+
+.roundpic {
+    width: 46px;
+    height: 46px;
+    margin-left: 15px;
+    border-radius: 50%;
+    background-color: #161d8b;
+
+}    
+
+.roundpic img {
+    text-align: center;
+    margin-right: 15px;
+    margin-top: 13px;
+    opacity: 0.6;
+}
+
+.txt {
+    margin-top: -40px;
+    margin-right: 15px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+.txt a {
+    color: #161d8b;
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+#proj {
+    background-color: #e9ca65;
+}
+
+#webp {
+    background-color: #f37f80;
+}
+
+#ios {
+    background-color: #0644b1;
+}
+
+#and {
+    background-color: #b6e13d;
+}
+
+#hello {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hello p {
+    color: #85808a;
+}
+
+#sqb {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sq {
+    
+    height: 145px;
+    width: 145px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #c4b9cf;
+    border-bottom: 4px solid #b6acc0;
+    background-color: white;
+
+}
+
+.sq img {
+    width: 125px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#rr {
+    background-color: #0644b1;
+    color: white;
+    letter-spacing: 000.02em;
+}
+
+#circle {
+
+    height: 60px;
+    width: 60px;
+    margin-top: 15px;
+    margin-left: 30px;
+    padding: 5px;
+    border: 12px solid #f37f80;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 11px;
+}
+
+#rr p{ 
+    margin-top: 10px;
+    margin-left: 18px;
+    font-size: 10px;
+
+}
